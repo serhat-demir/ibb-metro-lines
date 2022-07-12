@@ -7,7 +7,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.serhat.ibbmetro.adapter.LineAdapter;
+import com.serhat.ibbmetro.adapter.StationAdapter;
 import com.serhat.ibbmetro.api.ApiClient;
 import com.serhat.ibbmetro.api.ApiInterface;
 import com.serhat.ibbmetro.databinding.ActivityStationsBinding;
