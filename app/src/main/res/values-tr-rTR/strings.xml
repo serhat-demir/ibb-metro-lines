@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">İBB Metro</string>
+    <string name="istanbul_metro_lines">İstanbul Metro Hatları</string>
+    <string name="metro_stations">Metro İstasyonları</string>
+    <string name="loctions_are_not_working">Konum özelliği çalışmıyor.</string>
+    <string name="card_line_status">Durum:</string>
+    <string name="card_line_status_active">Çalışıyor</string>
+    <string name="card_line_status_inactive">Çalışmıyor</string>
+</resources>

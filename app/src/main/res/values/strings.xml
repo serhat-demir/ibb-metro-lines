@@ -1,31 +1,31 @@
 <resources>
-    <string name="app_name">İBB Metro</string>
+    <string name="app_name">IBB Metro</string>
     <string name="istanbul_metro_lines">Istanbul Metro Lines</string>
     <string name="metro_stations">- Metro Stations</string>
 
     <!-- card line -->
-    <string name="card_line_name_placeholder">M2</string>
-    <string name="card_line_desc_placeholder">Yenikapi-Seyrantepe-Haciosman Metro Line</string>
-    <string name="card_line_status_placeholder">Status: Active</string>
+    <string name="card_line_name_placeholder" translatable="false">M2</string>
+    <string name="card_line_desc_placeholder" translatable="false">Yenikapi-Seyrantepe-Haciosman Metro Line</string>
+    <string name="card_line_status_placeholder" translatable="false">Status: Active</string>
 
     <string name="card_line_status">Status:</string>
     <string name="card_line_status_active">Active</string>
     <string name="card_line_status_inactive">Inactive</string>
 
     <!-- card station -->
-    <string name="card_station_name_placeholder">YENİKAPI</string>
+    <string name="card_station_name_placeholder" translatable="false">YENİKAPI</string>
 
     <!-- languages -->
-    <string name="lang_turkish">Turkish</string>
+    <string name="lang_turkish" translatable="false">Turkish</string>
 
     <!-- messages -->
-    <string name="response_is_null">Response is null</string>
-    <string name="error">Error</string>
+    <string name="response_is_null" translatable="false">Response is null</string>
+    <string name="error" translatable="false">Error</string>
     <string name="loctions_are_not_working">Locations aren\'t working.</string>
 
     <!-- intent extras -->
-    <string name="intent_extra_line_id">line_id</string>
-    <string name="intent_extra_line_name">line_name</string>
-    <string name="intent_extra_line_color">line_colors</string>
+    <string name="intent_extra_line_id" translatable="false">line_id</string>
+    <string name="intent_extra_line_name" translatable="false">line_name</string>
+    <string name="intent_extra_line_color" translatable="false">line_colors</string>
 
 </resources>
