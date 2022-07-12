@@ -73,7 +73,7 @@ public class LineAdapter extends RecyclerView.Adapter<LineAdapter.LineHolder> {
         } else {
             description = line.getLongDescription().trim().isEmpty() ? mContext.getResources().getString(R.string.empty_desc) : line.getENDescription();
         }
-        
+
         String status = line.getIsActive() ? mContext.getResources().getString(R.string.card_line_status_active) : mContext.getResources().getString(R.string.card_line_status_inactive);
 
         holder.lineColor.setBackgroundColor(Color.rgb(colorR, colorG, colorB));
