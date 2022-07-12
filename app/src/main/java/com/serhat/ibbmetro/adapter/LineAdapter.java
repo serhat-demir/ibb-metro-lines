@@ -2,6 +2,7 @@ package com.serhat.ibbmetro.adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.serhat.ibbmetro.R;
+import com.serhat.ibbmetro.StationsActivity;
 import com.serhat.ibbmetro.databinding.CardLineBinding;
 import com.serhat.ibbmetro.model.Line;
 import com.serhat.ibbmetro.model.LineColor;
@@ -76,7 +78,11 @@ public class LineAdapter extends RecyclerView.Adapter<LineAdapter.LineHolder> {
         holder.lineStatus.setText(mContext.getResources().getString(R.string.card_line_status) + " " + status);
 
         holder.lineStations.setOnClickListener(view -> {
-            Toast.makeText(mContext, String.valueOf(line.getId()), Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(mContext, StationsActivity.class);
+            intent.putExtra(mContext.getResources().getString(R.string.intent_extra_line_id), String.valueOf(line.getId()));
+            intent.putExtra(mContext.getResources().getString(R.string.intent_extra_line_name), line.getName().toUpperCase());
+            intent.putExtra(mContext.getResources().getString(R.string.intent_extra_line_color), new int[] {colorR, colorG, colorB});
+            mContext.startActivity(intent);
         });
     }
 

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">İBB Metro</string>
     <string name="istanbul_metro_lines">Istanbul Metro Lines</string>
-    <string name="metro_stations">M2 - Metro Stations</string>
+    <string name="metro_stations">- Metro Stations</string>
 
     <!-- card line -->
     <string name="card_line_name_placeholder">M2</string>
@@ -18,8 +18,14 @@
     <!-- languages -->
     <string name="lang_turkish">Turkish</string>
 
-    <!-- ... -->
+    <!-- messages -->
     <string name="response_is_null">Response is null</string>
     <string name="error">Error</string>
+    <string name="loctions_are_not_working">Locations aren\'t working.</string>
+
+    <!-- intent extras -->
+    <string name="intent_extra_line_id">line_id</string>
+    <string name="intent_extra_line_name">line_name</string>
+    <string name="intent_extra_line_color">line_colors</string>
 
 </resources>

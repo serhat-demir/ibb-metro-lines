@@ -28,14 +28,14 @@
                 android:id="@+id/stationColor"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="7.5"
+                android:layout_weight="5"
                 android:background="@color/p_dark" />
 
             <TextView
                 android:id="@+id/stationName"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="85"
+                android:layout_weight="87.5"
                 android:padding="6dp"
                 android:text="@string/card_station_name_placeholder"
                 android:textSize="22sp"
