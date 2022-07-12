@@ -16,12 +16,13 @@
     <string name="card_station_name_placeholder" translatable="false">YENİKAPI</string>
 
     <!-- languages -->
-    <string name="lang_turkish" translatable="false">Turkish</string>
+    <string name="lang_turkish" translatable="false">tr</string>
 
     <!-- messages -->
     <string name="response_is_null" translatable="false">Response is null</string>
     <string name="error" translatable="false">Error</string>
     <string name="loctions_are_not_working">Locations aren\'t working.</string>
+    <string name="empty_desc" translatable="false">…</string>
 
     <!-- intent extras -->
     <string name="intent_extra_line_id" translatable="false">line_id</string>

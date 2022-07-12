@@ -65,16 +65,20 @@ public class LineAdapter extends RecyclerView.Adapter<LineAdapter.LineHolder> {
         int colorG = Integer.parseInt(color.getColorG());
         int colorB = Integer.parseInt(color.getColorB());
 
-        if (Locale.getDefault().getDisplayLanguage().equals(mContext.getResources().getString(R.string.lang_turkish))) {
-            holder.lineDescription.setText(line.getLongDescription());
-        } else {
-            holder.lineDescription.setText(line.getENDescription());
-        }
+        String locale = mContext.getResources().getConfiguration().locale.getLanguage();
+        String description;
 
+        if (locale.equals(mContext.getResources().getString(R.string.lang_turkish))) {
+            description = line.getLongDescription().trim().isEmpty() ? mContext.getResources().getString(R.string.empty_desc) : line.getLongDescription();
+        } else {
+            description = line.getLongDescription().trim().isEmpty() ? mContext.getResources().getString(R.string.empty_desc) : line.getENDescription();
+        }
+        
         String status = line.getIsActive() ? mContext.getResources().getString(R.string.card_line_status_active) : mContext.getResources().getString(R.string.card_line_status_inactive);
 
         holder.lineColor.setBackgroundColor(Color.rgb(colorR, colorG, colorB));
         holder.lineName.setText(line.getName().toUpperCase());
+        holder.lineDescription.setText(description);
         holder.lineStatus.setText(mContext.getResources().getString(R.string.card_line_status) + " " + status);
 
         holder.lineStations.setOnClickListener(view -> {
