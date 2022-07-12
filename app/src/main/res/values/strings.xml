@@ -8,4 +8,7 @@
     <string name="card_line_desc_placeholder">Yenikapi-Seyrantepe-Haciosman Metro Line</string>
     <string name="card_line_status_placeholder">Status: Active</string>
 
+    <!-- card station -->
+    <string name="card_station_name_placeholder">YENİKAPI</string>
+
 </resources>
