@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">İBB Metro</string>
+    <string name="istanbul_metro_lines">Istanbul Metro Lines</string>
+    <string name="metro_stations">M2 - Metro Stations</string>
 </resources>
