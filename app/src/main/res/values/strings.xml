@@ -8,7 +8,18 @@
     <string name="card_line_desc_placeholder">Yenikapi-Seyrantepe-Haciosman Metro Line</string>
     <string name="card_line_status_placeholder">Status: Active</string>
 
+    <string name="card_line_status">Status:</string>
+    <string name="card_line_status_active">Active</string>
+    <string name="card_line_status_inactive">Inactive</string>
+
     <!-- card station -->
     <string name="card_station_name_placeholder">YENİKAPI</string>
+
+    <!-- languages -->
+    <string name="lang_turkish">Turkish</string>
+
+    <!-- ... -->
+    <string name="response_is_null">Response is null</string>
+    <string name="error">Error</string>
 
 </resources>
