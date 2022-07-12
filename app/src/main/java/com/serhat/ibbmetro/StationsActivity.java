@@ -6,11 +6,15 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import android.content.Context;
 import android.os.Bundle;
 
+import com.serhat.ibbmetro.api.ApiClient;
+import com.serhat.ibbmetro.api.ApiInterface;
 import com.serhat.ibbmetro.databinding.ActivityStationsBinding;
 
 public class StationsActivity extends AppCompatActivity {
     private Context context;
     private ActivityStationsBinding binding;
+
+    private ApiInterface service;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +23,7 @@ public class StationsActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         context = StationsActivity.this;
+        service = ApiClient.getClient().create(ApiInterface.class);
 
         //toolbar
         binding.toolbarStations.setTitle(getString(R.string.app_name));
